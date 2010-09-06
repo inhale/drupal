@@ -1,5 +1,5 @@
 <?php
-// $Id: common.inc,v 1.756.2.97 2010/08/11 21:10:41 goba Exp $
+// $Id: common.inc,v 1.756.2.98 2010/09/06 11:13:27 goba Exp $
 
 /**
  * @file
@@ -3370,9 +3370,11 @@ function drupal_get_schema_unprocessed($module, $table = NULL) {
   if (!is_null($table) && isset($schema[$table])) {
     return $schema[$table];
   }
-  else {
+  elseif (!empty($schema)) {
     return $schema;
   }
+
+  return array();
 }
 
 /**
