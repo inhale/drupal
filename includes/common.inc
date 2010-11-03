@@ -1,5 +1,5 @@
 <?php
-// $Id: common.inc,v 1.756.2.99 2010/11/03 12:13:51 goba Exp $
+// $Id: common.inc,v 1.756.2.100 2010/11/03 12:22:35 goba Exp $
 
 /**
  * @file
@@ -1706,7 +1706,7 @@ function drupal_eval($code) {
  * Returns the path to a system item (module, theme, etc.).
  *
  * @param $type
- *   The type of the item (i.e. theme, theme_engine, module).
+ *   The type of the item (i.e. theme, theme_engine, module, profile).
  * @param $name
  *   The name of the item for which the path is requested.
  *
