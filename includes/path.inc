@@ -1,5 +1,5 @@
 <?php
-// $Id: path.inc,v 1.19.2.4 2010/05/28 15:12:04 goba Exp $
+// $Id: path.inc,v 1.19.2.5 2010/11/03 12:02:16 goba Exp $
 
 /**
  * @file
@@ -152,6 +152,8 @@ function drupal_get_normal_path($path, $path_language = '') {
  * @param $index
  *   The index of the component, where each component is separated by a '/'
  *   (forward-slash), and where the first component has an index of 0 (zero).
+ * @param $path
+ *   A path to break into components. Defaults to the path of the current page.
  *
  * @return
  *   The component specified by $index, or NULL if the specified component was
