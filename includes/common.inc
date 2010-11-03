@@ -1,5 +1,5 @@
 <?php
-// $Id: common.inc,v 1.756.2.98 2010/09/06 11:13:27 goba Exp $
+// $Id: common.inc,v 1.756.2.99 2010/11/03 12:13:51 goba Exp $
 
 /**
  * @file
@@ -1744,7 +1744,7 @@ function drupal_add_link($attributes) {
  *
  * @param $path
  *   (optional) The path to the CSS file relative to the base_path(), e.g.,
- *   /modules/devel/devel.css.
+ *   modules/devel/devel.css.
  *
  *   Modules should always prefix the names of their CSS files with the module
  *   name, for example: system-menus.css rather than simply menus.css. Themes
