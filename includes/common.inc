@@ -1,5 +1,5 @@
 <?php
-// $Id: common.inc,v 1.756.2.101 2010/11/03 18:54:41 goba Exp $
+// $Id: common.inc,v 1.756.2.102 2010/12/13 18:50:36 goba Exp $
 
 /**
  * @file
@@ -3148,10 +3148,6 @@ function drupal_common_theme() {
     ),
     'pager_link' => array(
       'arguments' => array('text' => NULL, 'page_new' => NULL, 'element' => NULL, 'parameters' => array(), 'attributes' => array()),
-    ),
-    // from locale.inc
-    'locale_admin_manage_screen' => array(
-      'arguments' => array('form' => NULL),
     ),
     // from menu.inc
     'menu_item_link' => array(
