@@ -1,5 +1,5 @@
 <?php
-// $Id: database.mysqli.inc,v 1.54.2.3 2010/12/15 13:21:14 goba Exp $
+// $Id: database.mysqli.inc,v 1.54.2.4 2010/12/15 20:41:10 goba Exp $
 
 /**
  * @file
@@ -346,6 +346,12 @@ function db_unlock_tables() {
 
 /**
  * Check if a table exists.
+ *
+ * @param $table
+ *   The name of the table.
+ *
+ * @return
+ *   TRUE if the table exists, and FALSE if the table does not exist.
  */
 function db_table_exists($table) {
   return (bool) db_fetch_object(db_query("SHOW TABLES LIKE '{". db_escape_table($table) ."}'"));
@@ -353,6 +359,14 @@ function db_table_exists($table) {
 
 /**
  * Check if a column exists in the given table.
+ *
+ * @param $table
+ *   The name of the table.
+ * @param $column
+ *   The name of the column.
+ *
+ * @return
+ *   TRUE if the column exists, and FALSE if the column does not exist.
  */
 function db_column_exists($table, $column) {
   return (bool) db_fetch_object(db_query("SHOW COLUMNS FROM {". db_escape_table($table) ."} LIKE '". db_escape_table($column) ."'"));
